@@ -6,29 +6,24 @@ t = turtle.Turtle()  # 生成一个海龟，名字叫“t”
 t.pensize(2)
 
 
-# 开始写你的代码
+# 随机颜色的用法：在需要用到颜色的地方写：
+# random.choice(colors)
+
+# 在下面开始写你的代码，以上的代码勿动
 # =============
 
-def triangle():
+# 一个边长是n的三角形
+def triangle(n):
     for i in range(3):
-        t.forward(20)
+        t.forward(n)
         t.right(120)
 
 
-def rectangle():
-    for i in range(4):
-        t.forward(20)
-        t.right(90)
-
-
-t.left(90)
-for i in range(18):
-    triangle()
-    t.forward(20)
-    t.right(20)
+for i in range(6):
+    triangle(i * 20)
 
 # =============
-# 代码结束
+# 你的代码结束，以下的代码勿动
 
-t.hideturtle()  # 隐藏海):龟
+t.hideturtle()  # 隐藏海龟
 turtle.done()  # 海龟作图完成，等待欣赏
