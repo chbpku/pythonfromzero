@@ -14,55 +14,61 @@ t.pensize(2)
 
 # 一个边长是n的三角形
 def triangle(n):
-    #    t.begin_fill()
+    t.begin_fill()
     for i in range(3):
         t.forward(n)
         t.right(120)
-
-
-#    t.end_fill()
+    t.end_fill()
 
 
 # 一个边长是m,n的长方形
 def rectangle(m, n):
-    #    t.begin_fill()
+    t.begin_fill()
     for i in range(2):
         t.forward(m)
         t.right(90)
         t.forward(n)
         t.right(90)
+    t.end_fill()
 
 
-#    t.end_fill()
+def pine():
+    t.fillcolor('green')
 
-t.fillcolor('green')
+    t.left(90)
+    rectangle(50, 20)
+    t.forward(50)
+    t.right(90)
+    t.forward(10)
+    t.left(90)
 
-t.left(90)
-rectangle(50, 20)
-t.forward(50)
-t.right(90)
-t.forward(10)
-t.left(90)
+    t.forward(80)
+    t.right(150)
+    triangle(100)
+    t.left(150)
 
-t.forward(80)
-t.right(150)
-triangle(100)
-t.left(150)
+    t.forward(20)
+    t.right(150)
+    triangle(80)
+    t.left(150)
 
-t.forward(20)
-t.right(150)
-triangle(80)
-t.left(150)
+    t.forward(20)
+    t.right(150)
+    triangle(60)
+    t.left(150)
 
-t.forward(20)
-t.right(150)
-triangle(60)
-t.left(150)
+    t.forward(20)
+    t.right(150)
+    triangle(40)
+    t.left(150)
 
-t.forward(20)
-t.right(150)
-triangle(40)
-t.left(150)
+    t.penup()
+    t.backward(190)
+    t.pendown()
+
+
+pine()
+
 # =============
 # 你的代码结束，以下的代码勿动
 

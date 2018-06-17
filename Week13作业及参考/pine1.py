@@ -63,6 +63,11 @@ t.forward(20)
 t.right(150)
 triangle(40)
 t.left(150)
+
+t.penup()
+t.backward(190)
+t.pendown()
+
 # =============
 # 你的代码结束，以下的代码勿动
 
